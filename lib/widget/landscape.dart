@@ -1,4 +1,4 @@
- 
+// ignore_for_file: prefer_is_empty, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 
@@ -16,6 +16,7 @@ class _BuildLandscapeState extends State<BuildLandscape> {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
+      //todo display section
       Expanded(
         flex: 3,
         child: Container(
@@ -49,6 +50,7 @@ class _BuildLandscapeState extends State<BuildLandscape> {
           ),
         ),
       ),
+     //todo first row
       Expanded(
         flex: 2,
         child: Row(
@@ -111,12 +113,13 @@ class _BuildLandscapeState extends State<BuildLandscape> {
           ],
         ),
       ),
+      //todo second row
       Expanded(
         flex: 2,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-             Expanded(
+            Expanded(
                 child: CustomButton(
                     buttonColor: Color(0xff303136),
                     textColor: Color(0xff29A8FF),
@@ -172,6 +175,7 @@ class _BuildLandscapeState extends State<BuildLandscape> {
           ],
         ),
       ),
+     //todo third row
       Expanded(
         flex: 2,
         child: Row(
@@ -217,7 +221,6 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                         displayInformation += '5';
                       });
                     })),
-           
             Expanded(
                 child: CustomButton(
                     buttonColor: Color(0xff005DB2),
@@ -231,6 +234,7 @@ class _BuildLandscapeState extends State<BuildLandscape> {
           ],
         ),
       ),
+    //todo fourth row
       Expanded(
         flex: 2,
         child: Row(
@@ -246,7 +250,7 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                         displayInformation += '1';
                       });
                     })),
-                    Expanded(
+            Expanded(
                 child: CustomButton(
                     buttonColor: Color(0xff303136),
                     textColor: Color(0xff29A8FF),
@@ -277,12 +281,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                         equalTab();
                       });
                     })),
-            
           ],
         ),
       )
-      
-    ]
-    );
+    ]);
   }
 }

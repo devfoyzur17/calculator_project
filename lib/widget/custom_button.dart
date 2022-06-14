@@ -24,7 +24,7 @@ class CustomButton extends StatelessWidget {
         child: Card(
           elevation: 3,
           shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.all(Radius.circular(16))),
+              borderRadius: BorderRadius.all(Radius.circular(15))),
           child: Container(
             height: 62,
             width: 62,
@@ -38,7 +38,7 @@ class CustomButton extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               color: buttonColor,
-              borderRadius: BorderRadius.circular(16)
+              borderRadius: BorderRadius.circular(15)
             ),
           ),
 

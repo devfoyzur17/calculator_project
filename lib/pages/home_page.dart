@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_final_fields, unused_field, unnecessary_string_escapes, no_leading_underscores_for_local_identifiers
- 
+
 import 'package:calculator_project/widget/landscape.dart';
 import 'package:calculator_project/widget/portrait.dart';
 import 'package:flutter/material.dart';
@@ -11,12 +11,11 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
-var displayInformation = '';
-  var displayResult = '';
- 
-class _HomePageState extends State<HomePage> {
-  
 
+var displayInformation = '';
+var displayResult = '';
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final _isLandscape =
@@ -40,14 +39,13 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-   void equalTab() {
-    String finalQuestion = displayInformation;
-    Parser p = Parser();
-    Expression exp = p.parse(finalQuestion);
+void equalTab() {
+  String finalQuestion = displayInformation;
+  Parser p = Parser();
+  Expression exp = p.parse(finalQuestion);
 
-    ContextModel cm = ContextModel();
-    var eval = exp.evaluate(EvaluationType.REAL, cm);
+  ContextModel cm = ContextModel();
+  var eval = exp.evaluate(EvaluationType.REAL, cm);
 
-    displayResult = "\=${eval.toString()}";
-  }
-
+  displayResult = "\=${eval.toString()}";
+}

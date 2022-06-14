@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../pages/home_page.dart';
-import 'custom_button.dart'; 
+import 'custom_button.dart';
 
 class BuildPortrait extends StatefulWidget {
   const BuildPortrait({Key? key}) : super(key: key);
@@ -15,8 +15,8 @@ class BuildPortrait extends StatefulWidget {
 class _BuildPortraitState extends State<BuildPortrait> {
   @override
   Widget build(BuildContext context) {
-
     return Column(children: [
+      //todo display row
       Expanded(
         flex: 3,
         child: Container(
@@ -50,6 +50,7 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ),
         ),
       ),
+     //todo first row
       Expanded(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -101,11 +102,12 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ],
         ),
       ),
+     //todo second row
       Expanded(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-  Expanded(
+            Expanded(
                 child: CustomButton(
                     buttonColor: Color(0xff303136),
                     textColor: Color(0xff29A8FF),
@@ -135,8 +137,6 @@ class _BuildPortraitState extends State<BuildPortrait> {
                         displayInformation += '9';
                       });
                     })),
-            //todo
-           
             Expanded(
                 child: CustomButton(
                     buttonColor: Color(0xff005DB2),
@@ -150,6 +150,7 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ],
         ),
       ),
+     //todo Third row
       Expanded(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -197,6 +198,7 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ],
         ),
       ),
+      //todo forth row
       Expanded(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -244,6 +246,7 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ],
         ),
       ),
+     // todo fiftth row
       Expanded(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -282,8 +285,6 @@ class _BuildPortraitState extends State<BuildPortrait> {
           ],
         ),
       ),
-    ]
-    );
-    
+    ]);
   }
 }

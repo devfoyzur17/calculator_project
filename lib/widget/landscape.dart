@@ -87,7 +87,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                     buttonText: "%",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '%';
+                        if(!displayInformation.endsWith('%')){
+                          displayInformation += '%';
+                        }
                       });
                     })),
             Expanded(
@@ -97,7 +99,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                     buttonText: "/",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '/';
+                        if(!displayInformation.endsWith('/')){
+                          displayInformation += '/';
+                        }
                       });
                     })),
             Expanded(
@@ -107,7 +111,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                     buttonText: "+",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '+';
+                         if(!displayInformation.endsWith('+')){
+                          displayInformation += '+';
+                        }
                       });
                     })),
           ],
@@ -169,7 +175,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                     buttonText: "-",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '-';
+                         if(!displayInformation.endsWith('-')){
+                          displayInformation += '-';
+                        }
                       });
                     })),
           ],
@@ -228,7 +236,9 @@ class _BuildLandscapeState extends State<BuildLandscape> {
                     buttonText: "*",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '*';
+                        if(!displayInformation.endsWith('*')){
+                          displayInformation += '*';
+                        }
                       });
                     })),
           ],

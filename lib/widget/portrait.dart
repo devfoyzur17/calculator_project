@@ -86,7 +86,9 @@ class _BuildPortraitState extends State<BuildPortrait> {
                     buttonText: "%",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '%';
+                        if(!displayInformation.endsWith('%')){
+                          displayInformation += '%';
+                        }
                       });
                     })),
             Expanded(
@@ -96,7 +98,9 @@ class _BuildPortraitState extends State<BuildPortrait> {
                     buttonText: "+",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '+';
+                        if(!displayInformation.endsWith('+')){
+                          displayInformation += '+';
+                        };
                       });
                     })),
           ],
@@ -144,7 +148,9 @@ class _BuildPortraitState extends State<BuildPortrait> {
                     buttonText: "-",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '-';
+                         if(!displayInformation.endsWith('-')){
+                          displayInformation += '-';
+                        }
                       });
                     })),
           ],
@@ -192,7 +198,9 @@ class _BuildPortraitState extends State<BuildPortrait> {
                     buttonText: "*",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '*';
+                         if(!displayInformation.endsWith('*')){
+                          displayInformation += '*';
+                        }
                       });
                     })),
           ],
@@ -240,7 +248,9 @@ class _BuildPortraitState extends State<BuildPortrait> {
                     buttonText: "/",
                     buttonTabbed: () {
                       setState(() {
-                        displayInformation += '/';
+                         if(!displayInformation.endsWith('/')){
+                          displayInformation += '/';
+                        }
                       });
                     })),
           ],
